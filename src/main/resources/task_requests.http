@@ -1,0 +1,33 @@
+http://localhost:8080/listTasks
+
+###
+
+
+
+POST http://localhost:8080/createTask
+Content-Type: application/json
+
+{
+  "taskName": "Sample Task Name2",
+  "taskDescription": "Sample Description2",
+  "complete": "false",
+  "taskId": "e7c140d3-3dcd-45c1-bda5-e3e78ea1e0db"
+}
+
+###
+
+POST http://localhost:8080/updateTask
+Content-Type: application/json
+
+{
+  "taskId": "e7d785ae-b594-440a-af09-3d1d7531b878",
+  "taskName": "Last Update Task",
+  "taskDescription": "Last Update Description",
+  "complete": false
+}
+
+###
+
+POST http://localhost:8080/completeTask?taskId=e7d785ae-b594-440a-af09-3d1d7531b878
+Content-Type: application/json
+###
