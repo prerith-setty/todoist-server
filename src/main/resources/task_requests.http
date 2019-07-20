@@ -10,8 +10,7 @@ Content-Type: application/json
 {
   "taskName": "Sample Task Name2",
   "taskDescription": "Sample Description2",
-  "complete": "false",
-  "taskId": "e7c140d3-3dcd-45c1-bda5-e3e78ea1e0db"
+  "complete": "false"
 }
 
 ###
@@ -20,14 +19,14 @@ POST http://localhost:8080/updateTask
 Content-Type: application/json
 
 {
-  "taskId": "e7d785ae-b594-440a-af09-3d1d7531b878",
-  "taskName": "Last Update Task",
-  "taskDescription": "Last Update Description",
+  "taskId": "a081503e-cb21-4b00-9a3c-6519893963cb",
+  "taskName": "Updated to the db",
+  "taskDescription": "Updated to the db",
   "complete": false
 }
 
 ###
 
-POST http://localhost:8080/completeTask?taskId=e7d785ae-b594-440a-af09-3d1d7531b878
+POST http://localhost:8080/completeTask?taskId=a081503e-cb21-4b00-9a3c-6519893963cb
 Content-Type: application/json
 ###
